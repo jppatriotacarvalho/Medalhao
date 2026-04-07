@@ -1,4 +1,4 @@
-# Medalhao# Pipeline de Dados E-Commerce: Arquitetura Medalhão 🚀
+# Pipeline de Dados E-Commerce: Arquitetura Medalhão 🚀
 
 Este projeto foi desenvolvido como parte da atividade de Engenharia de Dados do **Visagio Rocket Lab 2026**. O objetivo principal é estruturar os dados de um grande e-commerce (utilizando o dataset público da Olist), construindo um pipeline ETL completo e escalável no Data Lakehouse do **Databricks**.
 
@@ -6,22 +6,22 @@ O projeto implementa a **Arquitetura Medalhão (Medallion Architecture)**, proce
 
 ---
 
-## 🏗️ Arquitetura do Projeto
+##  Arquitetura do Projeto
 
 O pipeline foi construído dividindo o processamento em três camadas principais:
 
-### 🥉 Camada Bronze (Ingestão e Preparação)
+###  Camada Bronze (Ingestão e Preparação)
 **Arquivo:** `Atividade_land_to_bronze.ipynb`
 * **Objetivo:** Extrair os dados brutos (arquivos CSV) armazenados no Volume do Databricks e carregá-los como tabelas no banco de dados `bronze`.
 * **Tratamento:** Adição da coluna de rastreabilidade `timestamp_ingestion`, registrando o momento exato da ingestão do dado.
 
-### 🥈 Camada Silver (Limpeza e Otimização)
+###  Camada Silver (Limpeza e Otimização)
 **Arquivo:** `Atividade_bronze_to_silver.ipynb`
 * **Objetivo:** Refinar os dados da camada Bronze, preparando-os para as regras de negócio.
 * **Tratamento:** Limpeza de inconsistências, deduplicação de registros e formatação de esquemas.
 * **Performance:** Aplicação de otimização física das tabelas fato utilizando os comandos `OPTIMIZE` e `ZORDER`, garantindo alta performance para as consultas na camada seguinte.
 
-### 🥇 Camada Gold (Data Marts e KPIs)
+###  Camada Gold (Data Marts e KPIs)
 **Arquivo:** `Atividade_silver_to_gold.ipynb`
 * **Objetivo:** Disponibilizar os dados prontos para o consumo das áreas de negócio.
 * **Tratamento:** Gravação no modo *overwrite*. Geração de insights de avaliação de e-commerce.
@@ -34,7 +34,7 @@ O pipeline foi construído dividindo o processamento em três camadas principais
 
 ---
 
-## ⚙️ Orquestração e Automação
+##  Orquestração e Automação
 
 O pipeline é totalmente automatizado utilizando o **Databricks Workflows (Jobs)**. 
 
@@ -60,7 +60,7 @@ Abaixo está a evidência da execução de sucesso do Job, demonstrando o encade
 
 ---
 
-## 📂 Estrutura do Repositório
+##  Estrutura do Repositório
 
 ```text
 ├── Atividade_land_to_bronze.ipynb   # Notebook de ingestão (Camada Bronze)
