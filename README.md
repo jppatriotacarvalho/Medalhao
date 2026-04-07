@@ -6,7 +6,7 @@ O projeto implementa a **Arquitetura Medalhão (Medallion Architecture)**, proce
 
 ---
 
-##  Arquitetura do Projeto
+## Arquitetura do Projeto
 
 O pipeline foi construído dividindo o processamento em três camadas principais:
 
