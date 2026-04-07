@@ -1,4 +1,4 @@
-# Pipeline de Dados E-Commerce: Arquitetura Medalhão 🚀
+# Pipeline de Dados E-Commerce: Arquitetura Medalhão 
 
 Este projeto foi desenvolvido como parte da atividade de Engenharia de Dados do **Visagio Rocket Lab 2026**. O objetivo principal é estruturar os dados de um grande e-commerce (utilizando o dataset público da Olist), construindo um pipeline ETL completo e escalável no Data Lakehouse do **Databricks**.
 
@@ -50,7 +50,7 @@ Abaixo está a evidência da execução de sucesso do Job, demonstrando o encade
 
 ---
 
-## 🛠️ Tecnologias Utilizadas
+##  Tecnologias Utilizadas
 
 * **Plataforma:** Databricks (Data Lakehouse)
 * **Linguagens:** PySpark, Python, Spark SQL
